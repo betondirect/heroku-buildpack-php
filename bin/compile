@@ -270,4 +270,5 @@ install_blackfire_ext
 # special treatment for New Relic; we enable it if we detect a license key for it
 install_newrelic_ext
 install_newrelic_userini
-source ./bin/dbase.sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $DIR/bin/dbase.sh
