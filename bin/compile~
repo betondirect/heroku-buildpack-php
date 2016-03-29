@@ -271,4 +271,4 @@ install_blackfire_ext
 install_newrelic_ext
 install_newrelic_userini
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $DIR/dbase.sh
+source $DIR/bin/dbase.sh
