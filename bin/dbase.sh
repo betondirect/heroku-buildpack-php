@@ -14,7 +14,7 @@ fi
 cd $dbase_dir
 
 phpize
-./configure --enable-dbase --with-php-config=$PHP_ROOT/bin/php-config
+./configure --enable-dbase
 make
 make install
 BUILD_DIR=$1
