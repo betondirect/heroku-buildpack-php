@@ -1,5 +1,21 @@
 # heroku-buildpack-php CHANGELOG
 
+## v100 (2016-03-31)
+
+### ADD
+
+- ext-imap for all PHP versions [David Zuelke]
+- ext-pq/1.0.0 and 2.0.0 [David Zuelke]
+- PHP/7.0.5 [David Zuelke]
+- PHP/5.6.20 [David Zuelke]
+- PHP/5.5.34 [David Zuelke]
+
+### CHG
+
+- Return to using built-in default value for the `pcre.jit` PHP INI setting [David Zuelke]
+- Use Composer/1.0.0beta2 [David Zuelke]
+- Use first configured platform repository to load components for bootstrapping [David Zuelke]
+
 ## v99 (2016-03-23)
 
 ### FIX
