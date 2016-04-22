@@ -25,3 +25,5 @@ echo "-----> Building dbase..."
 pecl install dbase
 echo "important extension phalcon into php.ini"
 echo "extension=dbase.so" >> /app/.heroku/php/etc/php/php.ini
+echo "Modifying the default timezone"
+sed -i -e 's/.*date.timezone =.*/date.timezone = Europe\/Paris/' /app/.heroku/php/etc/php/php.ini
