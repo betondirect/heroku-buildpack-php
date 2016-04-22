@@ -1,5 +1,18 @@
 # heroku-buildpack-php CHANGELOG
 
+## v101 (2016-04-12)
+
+### ADD
+
+- ext-event/2.0.2 [David Zuelke]
+- ext-mongodb/1.1.6 [David Zuelke]
+- Apache/2.4.20 [David Zuelke]
+- ext-blackfire/1.10.3 [David Zuelke]
+
+### CHG
+
+- Use Composer/1.0.0 stable [David Zuelke]
+
 ## v100 (2016-03-31)
 
 ### ADD
