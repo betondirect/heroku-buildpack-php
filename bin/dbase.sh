@@ -28,4 +28,4 @@ echo "extension=dbase.so" >> /app/.heroku/php/etc/php/php.ini
 echo "Modifying the default timezone"
 sed -i -e 's/.*date.timezone =.*/date.timezone = Europe\/Paris/' /app/.heroku/php/etc/php/php.ini
 echo "setting memory_limit to 256"
-sed -i "s/memory_limit = .*/memory_limit = 256M/"
+sed -i "s/memory_limit = .*/memory_limit = 256M/" /app/.heroku/php/etc/php/php.ini
