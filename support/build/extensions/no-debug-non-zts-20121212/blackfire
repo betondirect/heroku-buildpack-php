@@ -23,6 +23,9 @@ case ${ZEND_MODULE_API_VERSION} in
 	20151012)
 		series=7.0
 		;;
+	20160303)
+		series=7.1
+		;;
 	*)
 		echo "Unsupported PHP/Zend Module API version: ${ZEND_MODULE_API_VERSION}"
 		exit 1
@@ -64,7 +67,7 @@ fi
 
 echo "-----> Packaging ${dep_package}..."
 
-curl -L -o probe.tar.gz "http://packages.blackfire.io/binaries/blackfire-php/${probe_version}/blackfire-php-linux_amd64-php-${series/\./}.tar.gz"
+curl -L -o probe.tar.gz "https://packages.blackfire.io/binaries/blackfire-php/${probe_version}/blackfire-php-linux_amd64-php-${series/\./}.tar.gz"
 
 mkdir -p ${ext_dir}
 tar -zxf probe.tar.gz

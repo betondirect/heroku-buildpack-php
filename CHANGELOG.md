@@ -1,5 +1,136 @@
 # heroku-buildpack-php CHANGELOG
 
+## v120 (2017-02-20)
+
+### ADD
+
+- ext-blackfire/1.14.3 [David Zuelke]
+- ext-mongodb/1.2.5 [David Zuelke]
+- ext-redis/3.1.1 [David Zuelke]
+- ext-imagick/3.4.3 [David Zuelke]
+- ext-rdkafka/3.0.1 [David Zuelke]
+- PHP/7.0.16 [David Zuelke]
+- PHP/7.1.2 [David Zuelke]
+- ext-memcached/3.0.3 [David Zuelke]
+
+### CHG
+
+- Allow overwriting of Apache access log format (now named `heroku`) in config include [David Zuelke]
+- Composer/1.3.2 [David Zuelke]
+- Use system libmcrypt and libmemcached on heroku-16 [David Zuelke]
+- librdkafka/0.9.3 [David Zuelke]
+- Enable `mod_proxy_wstunnel` in Apache config [David Zuelke]
+
+## v119 (2017-01-21)
+
+### FIX
+
+- Revert: ext-redis/3.1.0 [David Zuelke]
+- Revert: Composer/1.3.1 [David Zuelke]
+
+## v118 (2017-01-20)
+
+### ADD
+
+- ext-redis/3.1.0 [David Zuelke]
+- ext-rdkafka/3.0.0 [David Zuelke]
+- ext-phalcon/3.0.3 [David Zuelke]
+- ext-blackfire/1.14.2 [David Zuelke]
+- ext-apcu/5.1.8 [David Zuelke]
+- ext-mongodb/1.2.3 [David Zuelke]
+- PHP/5.6.30 [David Zuelke]
+- PHP/7.0.15 [David Zuelke]
+- PHP/7.1.1 [David Zuelke]
+- ext-newrelic/6.9.0 [David Zuelke]
+
+### CHG
+
+- Composer/1.3.1 [David Zuelke]
+- Ignore `WEB_CONCURRENCY` values with leading zeroes [David Zuelke]
+- Default `NEW_RELIC_APP_NAME` to `HEROKU_APP_NAME` [Christophe Coevoet]
+
+## v117 (2016-12-09)
+
+### ADD
+
+- ext-ev/1.0.4 [David Zuelke]
+- ext-mongodb/1.2.1 [David Zuelke]
+- PHP/7.0.14 [David Zuelke]
+- PHP/5.6.29 [David Zuelke]
+
+### CHG
+
+- Composer/1.2.4 [David Zuelke]
+
+## v116 (2016-12-01)
+
+### ADD
+
+- PHP/7.1.0 [David Zuelke]
+- ext-phalcon/3.0.2 [David Zuelke]
+- ext-rdkafka/2.0.1 [David Zuelke]
+- ext-mongodb/1.2.0 [David Zuelke]
+
+### FIX
+
+- Implicit and explicit stability flags for platform packages got ignored [David Zuelke]
+
+## v115 (2016-11-23)
+
+### ADD
+
+- ext-blackfire/1.14.1 [David Zuelke]
+
+### CHG
+
+- composer.json "require" or dependencies must now contain a runtime version requirement if "require-dev" or dependencies contain one [David Zuelke]
+
+## v114 (2016-11-10)
+
+### ADD
+
+- ext-apcu/5.1.7 [David Zuelke]
+- ext-mongodb/1.1.9 [David Zuelke]
+- ext-newrelic/6.8.0.177 [David Zuelke]
+- PHP/7.0.13 [David Zuelke]
+- PHP/5.6.28 [David Zuelke]
+- ext-event/2.2.1 [David Zuelke]
+
+### CHG
+
+- Composer/1.2.2 [David Zuelke]
+- Update to librdkafka-0.9.2 final for ext-rdkafka [David Zuelke]
+
+## v113 (2016-10-19)
+
+### ADD
+
+- ext-newrelic/6.7.0 [David Zuelke]
+- ext-blackfire/1.13.0 [David Zuelke]
+- ext-apcu/5.1.6 [David Zuelke]
+- PHP/5.6.27 [David Zuelke]
+- PHP/7.0.12 [David Zuelke]
+- ext-rdkafka/1.0.0 [David Zuelke]
+- ext-rdkafka/2.0.0 [David Zuelke]
+
+## v112 (2016-09-20)
+
+### FIX
+
+- Use Composer/1.2.1 [David Zuelke]
+
+## v111 (2016-09-20)
+
+### ADD
+
+- ext-newrelic/6.6.1.172 [David Zuelke]
+- PHP/5.6.26 [David Zuelke]
+- PHP/7.0.11 [David Zuelke]
+
+### CHG
+
+- Use Composer/1.2.1 [David Zuelke]
+
 ## v110 (2016-08-26)
 
 ### ADD
